@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Profesional - Naufal Sholahuddin | Full Stack .NET Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm 12mm 8mm 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+      line-height: 1.45;
+      font-size: 9pt;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .header-box {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #312e81 100%);
+      color: #ffffff;
+      padding: 14px 18px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .header-name {
+      font-size: 18pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 2px;
+      color: #ffffff;
+    }
+
+    .header-title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #818cf8;
+      margin-bottom: 8px;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 8pt;
+      color: #cbd5e1;
+      margin-right: 12px;
+      margin-bottom: 2px;
+    }
+
+    .contact-item a {
+      color: #e2e8f0;
+    }
+
+    .section-title {
+      font-size: 10pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #0f172a;
+      border-bottom: 2px solid #4f46e5;
+      padding-bottom: 3px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .section-title i {
+      color: #4f46e5;
+    }
+
+    .summary-text {
+      font-size: 8.5pt;
+      color: #334155;
+      margin-bottom: 8px;
+      line-height: 1.45;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 5px;
+      margin-bottom: 6px;
+    }
+
+    .skill-cell {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 8px;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    .skill-cat-title {
+      font-weight: 700;
+      font-size: 8pt;
+      color: #1e1b4b;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .skill-cat-title i {
+      color: #4f46e5;
+      font-size: 8.5pt;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .skill-tag {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 7.2pt;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .skill-tag.highlight {
+      background: #eef2ff;
+      border-color: #c7d2fe;
+      color: #4338ca;
+      font-weight: 600;
+    }
+
+    /* Experience */
+    .exp-item {
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed #e2e8f0;
+      page-break-inside: avoid;
+    }
+
+    .exp-item:last-child {
+      border-bottom: none;
+      margin-bottom: 2px;
+      padding-bottom: 0;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2px;
+    }
+
+    .exp-role {
+      font-size: 9.2pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .exp-company {
+      font-size: 8.2pt;
+      color: #4f46e5;
+      font-weight: 600;
+    }
+
+    .exp-period {
+      font-size: 7.5pt;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 1.5px 7px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .exp-bullets {
+      margin: 0;
+      padding-left: 15px;
+      font-size: 7.8pt;
+      color: #475569;
+    }
+
+    .exp-bullets li {
+      margin-bottom: 1.5px;
+    }
+
+    /* Project Cards */
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-left: 3.5px solid #4f46e5;
+      border-radius: 6px;
+      padding: 7px 10px;
+      margin-bottom: 6px;
+      page-break-inside: avoid;
+    }
+
+    .project-card.featured {
+      border-left-color: #0ea5e9;
+      background: #f8fafc;
+    }
+
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2px;
+    }
+
+    .project-title {
+      font-size: 8.8pt;
+      font-weight: 700;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .project-repo {
+      font-size: 7.2pt;
+      color: #475569;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .project-badge {
+      font-size: 7.2pt;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      font-weight: 600;
+      background: #eef2ff;
+      color: #4338ca;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .project-desc {
+      font-size: 7.8pt;
+      color: #334155;
+      margin-bottom: 3.5px;
+      line-height: 1.35;
+    }
+
+    .project-highlights {
+      margin: 0 0 4px 0;
+      padding-left: 14px;
+      font-size: 7.5pt;
+      color: #475569;
+    }
+
+    .project-highlights li {
+      margin-bottom: 1px;
+    }
+
+    .project-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5px;
+    }
+
+    .stack-pill {
+      font-size: 6.8pt;
+      padding: 1px 4px;
+      border-radius: 2px;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      color: #475569;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Certs & Education */
+    .cert-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 5px 8px;
+      border-radius: 5px;
+      margin-bottom: 4px;
+      page-break-inside: avoid;
+    }
+
+    .cert-info-title {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .cert-info-issuer {
+      font-size: 7.2pt;
+      color: #64748b;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .cert-link {
+      font-size: 7.2pt;
+      color: #4f46e5;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: #eef2ff;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      border: 1px solid #c7d2fe;
+    }
+
+    .footer-doc {
+      margin-top: 10px;
+      padding-top: 6px;
+      border-top: 1px solid #cbd5e1;
+      text-align: center;
+      font-size: 7.2pt;
+      color: #94a3b8;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= PAGE 1 ================= -->
+  <!-- Header Banner -->
+  <div class="header-box">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <div class="header-name">NAUFAL SHOLAHUDDIN, S.Kom</div>
+        <div class="header-title">Full Stack .NET Developer & Technical Consultant</div>
+        <div class="d-flex flex-wrap">
+          <span class="contact-item"><i class="bi bi-geo-alt-fill"></i> Jakarta Selatan, Indonesia</span>
+          <span class="contact-item"><i class="bi bi-envelope-fill"></i> <a href="mailto:naufalsholahuddin33@gmail.com">naufalsholahuddin33@gmail.com</a></span>
+          <span class="contact-item"><i class="bi bi-telephone-fill"></i> <a href="https://wa.me/6281295927133">+62 812-9592-7133</a></span>
+        </div>
+        <div class="d-flex flex-wrap mt-1">
+          <span class="contact-item"><i class="bi bi-globe"></i> <a href="https://naufalsho.github.io/Portofolio_githubpages/">naufalsho.github.io/Portofolio_githubpages</a></span>
+          <span class="contact-item"><i class="bi bi-github"></i> <a href="https://github.com/naufalsho">github.com/naufalsho</a></span>
+          <span class="contact-item"><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/naufalsholahuddin">linkedin.com/in/naufalsholahuddin</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="section-title"><i class="bi bi-person-badge-fill"></i> Ringkasan Eksekutif & Profil Profesional</div>
+  <p class="summary-text">
+    Software Engineer dan Technical Consultant berpengalaman <strong>3+ tahun</strong> dalam rekayasa sistem enterprise berskala korporat, arsitektur backend <strong>C#, .NET 10, Dapper, SQL Server</strong>, serta integrasi sistem (SAP ERP, SSRS, Tesseract OCR). Memiliki rekam jejak mendalam dalam mengoptimasi query database berkinerja tinggi, memangkas latensi alur approval hingga 70%, dan memimpin implementasi subsistem mission-critical untuk klien korporasi terkemuka seperti <strong>PT Medion</strong>, <strong>PT Traktor Nusantara (Astra)</strong>, dan <strong>PT Berca Hardayaperkasa</strong>.
+  </p>
+
+  <!-- Technical Competencies Table -->
+  <div class="section-title"><i class="bi bi-cpu-fill"></i> Matriks Keahlian Teknis & Arsitektur</div>
+  <table class="skills-table">
+    <tr>
+      <td class="skill-cell">
+        <div class="skill-cat-title"><i class="fa-solid fa-server"></i> Backend & Core Frameworks</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">C# (.NET)</span>
+          <span class="skill-tag highlight">.NET 10 / 8 / 6</span>
+          <span class="skill-tag highlight">.NET Core MVC</span>
+          <span class="skill-tag highlight">.NET Web API</span>
+          <span class="skill-tag highlight">Dapper (Micro-ORM)</span>
+          <span class="skill-tag">Entity Framework Core</span>
+          <span class="skill-tag">Razor Pages</span>
+          <span class="skill-tag">SignalR Realtime</span>
+        </div>
+      </td>
+      <td class="skill-cell">
+        <div class="skill-cat-title"><i class="fa-solid fa-database"></i> Database & Query Optimization</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">SQL Server</span>
+          <span class="skill-tag highlight">Stored Procedures (SP)</span>
+          <span class="skill-tag highlight">Oracle DB</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SSRS Reports</span>
+          <span class="skill-tag">Query Tuning & Execution Plan</span>
+          <span class="skill-tag">Unit of Work</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="skill-cell">
+        <div class="skill-cat-title"><i class="fa-solid fa-industry"></i> Enterprise Integration & Automation</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">SAP ERP Integration</span>
+          <span class="skill-tag highlight">SAP ABAP Batch Sync</span>
+          <span class="skill-tag highlight">Tesseract OCR (PDF to Data)</span>
+          <span class="skill-tag">UiPath RPA</span>
+          <span class="skill-tag">Excel Macro Automation</span>
+          <span class="skill-tag">Katalon QA Automation</span>
+          <span class="skill-tag">Hangfire Worker</span>
+        </div>
+      </td>
+      <td class="skill-cell">
+        <div class="skill-cat-title"><i class="fa-solid fa-layer-group"></i> Frontend, Mobile & DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Bootstrap 5</span>
+          <span class="skill-tag highlight">UBold Dashboard</span>
+          <span class="skill-tag">jQuery / Vanilla JS</span>
+          <span class="skill-tag">React (API Integration)</span>
+          <span class="skill-tag">Flutter & Dart</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">IIS & Windows Server</span>
+          <span class="skill-tag">Git & GitHub Actions</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Experience -->
+  <div class="section-title"><i class="bi bi-briefcase-fill"></i> Riwayat Pengalaman Profesional Enterprise</div>
+  
+  <div class="exp-item">
+    <div class="exp-header">
+      <div>
+        <span class="exp-role">Technical Consultant</span> — <span class="exp-company">PT. Inti Talenta Technology, Jakarta</span>
+        <div class="small text-secondary fw-semibold">Dedicated Client: PT Medion (Bandung / Cimahi)</div>
+      </div>
+      <span class="exp-period">Sept 2025 – Sept 2026</span>
+    </div>
+    <ul class="exp-bullets">
+      <li>Bertindak sebagai dedicated Technical Consultant untuk sistem operasional enterprise klien (PT Medion), menangani support sistem internal, integrasi data, dan pengembangan aplikasi tingkat lanjut.</li>
+      <li>Mendiagnosis dan menyelesaikan kendala teknis operasional terkait SAP menggunakan SQL Queries, Stored Procedures berbobot tinggi, dan SSRS Reporting lintas departemen.</li>
+      <li>Merancang dan mengimplementasikan aplikasi enterprise modern berbasis <strong>.NET 10 MVC & Dapper</strong> berfokus pada skalabilitas, high-throughput, dan response time sub-detik.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <div>
+        <span class="exp-role">Full Stack Developer</span> — <span class="exp-company">PT. Traktor Nusantara (Member of ASTRA), Jakarta</span>
+      </div>
+      <span class="exp-period">Jun 2023 – Sept 2025</span>
+    </div>
+    <ul class="exp-bullets">
+      <li>Mengembangkan dan mengelola ekosistem aplikasi enterprise internal: <strong>MSI Portal (YMS)</strong>, <strong>AED Portal</strong>, <strong>DQCustomer</strong>, dan <strong>AED Mobile</strong>.</li>
+      <li>Mengimplementasikan automasi pabean (Customs Clearance) berbasis <strong>Tesseract OCR</strong> untuk ekstraksi dokumen PDF faktur principal & pabean langsung ke basis data.</li>
+      <li>Mengintegrasikan sinkronisasi batch terjadwal dengan sistem SAP ERP perusahaan (PO, material, Goods Receipt MIGO) serta backend API untuk aplikasi mobile Flutter.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <div>
+        <span class="exp-role">Junior Developer (.NET Bootcamp)</span> — <span class="exp-company">PT. Berca Hardayaperkasa, Jakarta</span>
+      </div>
+      <span class="exp-period">Apr 2023 – Jun 2023</span>
+    </div>
+    <ul class="exp-bullets">
+      <li>Bootcamp intensif 3 bulan mendalami C#, .NET Core MVC, Web API, Dapper, Entity Framework, Repository Pattern, JWT, dan SQL Server.</li>
+      <li>Menjadi Top Contributor (340+ commits) dalam perancangan dan implementasi platform <strong>RAS-Psychotest-Berca</strong> yang menggantikan langganan SaaS eksternal.</li>
+    </ul>
+  </div>
+
+  <!-- Page 1 Footer -->
+  <div class="footer-doc">
+    <span>Portofolio Resmi Naufal Sholahuddin, S.Kom</span>
+    <span>Halaman 1 dari 3</span>
+    <span>https://naufalsho.github.io/Portofolio_githubpages/</span>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ================= PAGE 2 ================= -->
+  <!-- Featured Projects Section -->
+  <div class="section-title"><i class="bi bi-code-square"></i> Portofolio Repositori Proyek Enterprise (Bagian 1)</div>
+  <p class="summary-text mb-2">
+    Setiap proyek di bawah ini bersumber langsung dari repositori resmi di <a href="https://github.com/naufalsho">github.com/naufalsho</a> dengan rincian arsitektur teknis dan solusi rekayasa:
+  </p>
+
+  <!-- Project 1: MEDIST 3.0 -->
+  <div class="project-card featured">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-boxes-packing text-primary"></i> MEDIST 3.0 — Enterprise Distribution & CRM ERP System</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/Medist_v3.0" target="_blank">github.com/naufalsho/Medist_v3.0</a> &bull; Peran: Full-Stack Developer</div>
+      </div>
+      <span class="project-badge">.NET 10 MVC &bull; Dapper &bull; Oracle / SQL</span>
+    </div>
+    <div class="project-desc">
+      Sistem ERP rantai pasok distribusi korporat mengelola logistik pengiriman armada (*Shipment Realization*), sirkulasi komersial order, dan otomasi alur permohonan relasi pelanggan (*Hublang Request*).
+    </div>
+    <ul class="project-highlights">
+      <li><strong>State Machine Circulation Engine</strong>: Merancang alur persetujuan 8 slot berjenjang (Requester, DAM, SA1, AR, RM, SA2, SA3, Final) dengan kontrol otorisasi ketat dan audit trail.</li>
+      <li><strong>Concurrent Async Fetching (`Task.WhenAll`)</strong>: Pemuatan paralel 12 form tab kompleks di Controller, memangkas latensi halaman hingga <strong>60–70%</strong> tanpa query bottleneck.</li>
+      <li><strong>Dapper Micro-ORM & `SqlLoader`</strong>: Mengelola 48 query SQL modular terisolasi di folder terpisah tanpa overhead EF Core.</li>
+      <li><strong>Multi-Commodity Credit Evaluation</strong>: Scoring calon pelanggan lintas komoditas (Agri, Aqua, Pet, Farm, Shop, OZPS) serta integrasi storage SFTP & PDF generation.</li>
+    </ul>
+    <div class="project-stack">
+      <span class="stack-pill">.NET 10 MVC</span>
+      <span class="stack-pill">C#</span>
+      <span class="stack-pill">Dapper</span>
+      <span class="stack-pill">SqlLoader</span>
+      <span class="stack-pill">Oracle / SQL Server</span>
+      <span class="stack-pill">Task.WhenAll Async</span>
+      <span class="stack-pill">UBold Dashboard</span>
+      <span class="stack-pill">SFTP Integration</span>
+    </div>
+  </div>
+
+  <!-- Project 2: MedionExam -->
+  <div class="project-card featured">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-laptop-code text-primary"></i> MedionExam (ExSys 3.0) — Enterprise Assessment & Exam Platform</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/MedionExam" target="_blank">github.com/naufalsho/MedionExam</a> &bull; Peran: Full Stack .NET Developer & Architect</div>
+      </div>
+      <span class="project-badge">.NET 10 MVC &bull; Dapper 2.1 &bull; C# 13</span>
+    </div>
+    <div class="project-desc">
+      Platform asesmen dan psikotes karyawan skala besar PT Medion dengan ujian berbasis multimedia dinamis, live webcam proctoring terpusat, penilaian otomatis, dan generator sertifikat/kompetensi PDF.
+    </div>
+    <ul class="project-highlights">
+      <li><strong>Zero-Drift Absolute Timer</strong>: Kalkulasi delta berbasis timestamp (`Date.now()`) yang mengeliminasi masalah timer macet akibat background tab sleep dan screen lock iOS/Safari.</li>
+      <li><strong>Zero-Reload SPA Engine</strong>: Transisi subtes via AJAX Partial Views dengan media stream kamera persistent (`window.globalVideoStream`) tanpa popup izin browser berulang.</li>
+      <li><strong>High-Concurrency Scoring Dapper</strong>: Agregasi skor ujian ribuan peserta secara real-time dengan parameterized Dapper SQL sub-millisecond.</li>
+      <li><strong>Multi-Day Duration Engine & IHostedService Worker</strong>: Custom duration bypass batas SQL TIME 23:59:59 untuk ujian 600+ jam dan queue background email asynchronously.</li>
+    </ul>
+    <div class="project-stack">
+      <span class="stack-pill">.NET 10 MVC</span>
+      <span class="stack-pill">C# 13</span>
+      <span class="stack-pill">Dapper 2.1</span>
+      <span class="stack-pill">SQL Server 2022</span>
+      <span class="stack-pill">Dragula.js</span>
+      <span class="stack-pill">WebcamJS</span>
+      <span class="stack-pill">DinkToPdf</span>
+      <span class="stack-pill">UBold Theme</span>
+    </div>
+  </div>
+
+  <!-- Project 3: AED Portal -->
+  <div class="project-card">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-truck-monster text-info"></i> AED Portal — Machinery Spec, Technical Library & Q&A System</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/AED-1" target="_blank">github.com/naufalsho/AED-1</a> &bull; Peran: Full Stack Developer</div>
+      </div>
+      <span class="project-badge">.NET 6.0 &bull; Dapper + EF Core &bull; SignalR</span>
+    </div>
+    <div class="project-desc">
+      Portal web enterprise internal alat berat (Material Handling & Agribusiness) memfasilitasi matriks perbandingan unit head-to-head, perpustakaan manual servis, dan konsultasi tiket Q&A interaktif.
+    </div>
+    <ul class="project-highlights">
+      <li><strong>N-Tier Clean Architecture</strong>: Pemisahan modular Core, Data, Domain, Infrastructure, dan WebApp.</li>
+      <li><strong>Hybrid Data Access</strong>: Dapper untuk komparasi matriks kecepatan tinggi & EF Core 6 untuk audit log transaksi.</li>
+      <li><strong>Real-Time SignalR Notifications</strong>: Notifikasi langsung saat ada pembaruan tiket teknis dan konsultasi produk.</li>
+      <li><strong>In-Browser Secure PDF Reader</strong>: Pembaca handbook terproteksi mencegah download tanpa otorisasi.</li>
+    </ul>
+    <div class="project-stack">
+      <span class="stack-pill">.NET 6.0 MVC</span>
+      <span class="stack-pill">Dapper</span>
+      <span class="stack-pill">EF Core 6</span>
+      <span class="stack-pill">SignalR</span>
+      <span class="stack-pill">SQL Server</span>
+      <span class="stack-pill">Hangfire</span>
+      <span class="stack-pill">AES Encryption</span>
+    </div>
+  </div>
+
+  <!-- Project 4: MSI Portal -->
+  <div class="project-card">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-warehouse text-warning"></i> MSI Portal — Yard Management System (YMS) & Inbound Logistics</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/MSI-v01" target="_blank">github.com/naufalsho/MSI-v01</a> &bull; Peran: Full Stack Developer (Inbound, Customs & OCR)</div>
+      </div>
+      <span class="project-badge">.NET 6 MVC &bull; Tesseract OCR &bull; SAP ABAP</span>
+    </div>
+    <div class="project-desc">
+      Platform logistik inbound dan pengelolaan yard unit alat berat, otomatisasi pabean impor/ekspor, inspeksi bongkar muat, dan penempatan blok unit di pelabuhan/gudang.
+    </div>
+    <ul class="project-highlights">
+      <li><strong>Otomatisasi Tesseract OCR</strong>: Mengekstraksi otomatis dokumen pabean PDF (BC 1.1, PIB, SPPB, Faktur Perkins/AGCO).</li>
+      <li><strong>SAP HANA ERP Sync</strong>: Penjadwalan batch ABAP file terintegrasi (PO, material master, Goods Receipt MIGO).</li>
+      <li><strong>8-Stage Yard Lifecycle</strong>: Pelacakan fisik unit berbasis barcode & QR code dari pelabuhan hingga siap kirim.</li>
+    </ul>
+    <div class="project-stack">
+      <span class="stack-pill">ASP.NET 6 MVC</span>
+      <span class="stack-pill">Tesseract OCR</span>
+      <span class="stack-pill">SAP ABAP Batch</span>
+      <span class="stack-pill">SQL Server</span>
+      <span class="stack-pill">Power BI Api</span>
+      <span class="stack-pill">RPA Automasi</span>
+    </div>
+  </div>
+
+  <!-- Project 5: DQCustomer -->
+  <div class="project-card">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-users-gear text-success"></i> DQCustomer — Customer Data Quality & Governance Backend</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/DQCustomerBackEnd" target="_blank">github.com/naufalsho/DQCustomerBackEnd</a> &bull; Peran: Full Stack Developer</div>
+      </div>
+      <span class="project-badge">.NET Web API &bull; Dapper &bull; Next.js</span>
+    </div>
+    <div class="project-desc">
+      Layanan backend tata kelola master data pelanggan korporat, segmentasi akun, sales opportunity funnel, dan jadwal penagihan terintegrasi frontend Next.js.
+    </div>
+    <ul class="project-highlights">
+      <li><strong>High-Performance Dapper Architecture</strong>: Dapper ORM dengan stored procedure kompleks dan pola Unit of Work.</li>
+      <li><strong>Audit Trail Mutasi Otomatis</strong>: Pencatatan mutasi PIC, alamat kantor, dan limit kredit pelanggan tanpa data loss.</li>
+    </ul>
+    <div class="project-stack">
+      <span class="stack-pill">ASP.NET Core Web API</span>
+      <span class="stack-pill">Dapper ORM</span>
+      <span class="stack-pill">SQL Server SP</span>
+      <span class="stack-pill">Next.js</span>
+      <span class="stack-pill">TypeScript</span>
+      <span class="stack-pill">JWT Auth</span>
+    </div>
+  </div>
+
+  <!-- Page 2 Footer -->
+  <div class="footer-doc">
+    <span>Portofolio Resmi Naufal Sholahuddin, S.Kom</span>
+    <span>Halaman 2 dari 3</span>
+    <span>https://naufalsho.github.io/Portofolio_githubpages/</span>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ================= PAGE 3 ================= -->
+  <!-- Projects Section Continued -->
+  <div class="section-title"><i class="bi bi-code-square"></i> Portofolio Repositori Proyek (Bagian 2)</div>
+
+  <!-- Project 6: RAS-Psychotest-Berca -->
+  <div class="project-card">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-brain text-purple"></i> RAS-Psychotest-Berca — Enterprise Online Psychological Testing</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/RAS-Psychotest-Berca" target="_blank">github.com/naufalsho/RAS-Psychotest-Berca</a> &bull; Peran: Lead Contributor (340+ commits)</div>
+      </div>
+      <span class="project-badge">.NET 6 MVC &bull; 5 Test Engines &bull; ClosedXML</span>
+    </div>
+    <div class="project-desc">
+      Platform asesmen psikotes online in-house untuk rekrutmen PT Berca Hardayaperkasa, menggantikan langganan vendor pihak ketiga.
+    </div>
+    <ul class="project-highlights">
+      <li><strong>5 Engine Psikometrik</strong>: IST (9 subtes + matriks norma usia), DISC, PAPI Kostick (20 dimensi), MSDT, dan RMIB.</li>
+      <li><strong>Automated Psychogram Generator</strong>: Kalkulasi skor otomatis dan ekspor laporan psikogram Excel via ClosedXML.</li>
+      <li><strong>Database Mail System</strong>: Undangan ujian otomatis dengan retry logic berbasis transaksi SQL Server.</li>
+    </ul>
+    <div class="project-stack">
+      <span class="stack-pill">.NET 6.0 MVC</span>
+      <span class="stack-pill">C# 10</span>
+      <span class="stack-pill">Dapper</span>
+      <span class="stack-pill">EF Core</span>
+      <span class="stack-pill">SQL Server</span>
+      <span class="stack-pill">ClosedXML</span>
+      <span class="stack-pill">AdminLTE</span>
+    </div>
+  </div>
+
+  <!-- Project 7: Traknus AED Mobile -->
+  <div class="project-card">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-mobile-screen text-primary"></i> Traknus AED Mobile — Cross-Platform Equipment & Field App</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/aed_mobile_v01" target="_blank">github.com/naufalsho/aed_mobile_v01</a> &bull; Peran: Mobile & API Developer</div>
+      </div>
+      <span class="project-badge">Flutter 3.x &bull; Dart &bull; Provider Pattern</span>
+    </div>
+    <div class="project-desc">
+      Aplikasi mobile untuk teknisi lapangan dan sales unit alat berat, katalog produk, handbook offline, dan inspeksi service.
+    </div>
+    <ul class="project-highlights">
+      <li><strong>Role-Based Access Control (RBAC)</strong>: Hak akses katalog sesuai divisi pengguna (MHB, AGCON, POWER).</li>
+      <li><strong>Smart Chunk Caching PDF Reader</strong>: Penghematan kuota internet teknisi lapangan melalui unduhan parsial Dio.</li>
+    </ul>
+    <div class="project-stack">
+      <span class="stack-pill">Flutter 3.x</span>
+      <span class="stack-pill">Dart</span>
+      <span class="stack-pill">Provider</span>
+      <span class="stack-pill">Dio</span>
+      <span class="stack-pill">flutter_pdfview</span>
+      <span class="stack-pill">REST API</span>
+    </div>
+  </div>
+
+  <!-- Project 8: Assessment Agit -->
+  <div class="project-card">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-shield-halved text-danger"></i> Access Request Hub MVP — Clean Architecture Enterprise</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/Assessment_Agit" target="_blank">github.com/naufalsho/Assessment_Agit</a> &bull; Peran: Full Stack .NET Engineer & Architect</div>
+      </div>
+      <span class="project-badge">.NET 10.0 &bull; Clean Architecture &bull; SQLite</span>
+    </div>
+    <div class="project-desc">
+      Sistem manajemen permohonan hak akses internal, approval workflow bertingkat, penanganan konkurensi, dan immutable audit log.
+    </div>
+    <ul class="project-highlights">
+      <li><strong>100% Test Coverage</strong>: xUnit otomatis untuk 7 skenario bisnis utama & kontrol konkurensi idempotency.</li>
+    </ul>
+    <div class="project-stack">
+      <span class="stack-pill">.NET 10.0</span>
+      <span class="stack-pill">Razor Pages</span>
+      <span class="stack-pill">Clean Architecture</span>
+      <span class="stack-pill">SQLite</span>
+      <span class="stack-pill">xUnit</span>
+    </div>
+  </div>
+
+  <!-- Project 9: JWT Refresh Flow -->
+  <div class="project-card">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-key text-warning"></i> JWT Refresh Token Flow Architecture MVP</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/refresh-flow-mvp-reactandnet" target="_blank">github.com/naufalsho/refresh-flow-mvp-reactandnet</a> &bull; Peran: Security Architect</div>
+      </div>
+      <span class="project-badge">.NET 8 API &bull; React TS &bull; Token Rotation</span>
+    </div>
+    <div class="project-desc">
+      Arsitektur otentikasi dual-token tingkat produksi: access token pendek di memory + rotating refresh token dalam HttpOnly cookie dengan deteksi replay otomatis.
+    </div>
+    <div class="project-stack">
+      <span class="stack-pill">.NET 8 Web API</span>
+      <span class="stack-pill">React (TypeScript)</span>
+      <span class="stack-pill">Axios Interceptor</span>
+      <span class="stack-pill">HttpOnly Cookie</span>
+    </div>
+  </div>
+
+  <!-- Project 10: SPK Skripsi AHP -->
+  <div class="project-card">
+    <div class="project-top">
+      <div>
+        <span class="project-title"><i class="fa-solid fa-chart-pie text-success"></i> SPK Penerimaan Karyawan Metode AHP (Skripsi UNINDRA)</span>
+        <div class="project-repo">Repo: <a href="https://github.com/naufalsho/SPK_Penerimaan_Karyawan_Paruh_Waktu_Metode_Analytical_Hierarchy_Process_AHP-Skripsi" target="_blank">github.com/naufalsho/SPK_...-Skripsi</a> &bull; Peran: Lead Researcher & Dev</div>
+      </div>
+      <span class="project-badge">Java &bull; AHP Algorithm &bull; MySQL &bull; iReports</span>
+    </div>
+    <div class="project-desc">
+      Decision Support System penerimaan karyawan paruh waktu menggunakan algoritma Analytical Hierarchy Process (AHP), matriks perbandingan berpasangan, kalkulasi konsistensi (CR &le; 0.1), dan iReports.
+    </div>
+    <div class="project-stack">
+      <span class="stack-pill">Java</span>
+      <span class="stack-pill">MySQL</span>
+      <span class="stack-pill">JDBC</span>
+      <span class="stack-pill">AHP Algorithm</span>
+      <span class="stack-pill">iReports</span>
+    </div>
+  </div>
+
+  <!-- Education & Verified Certifications -->
+  <div class="row g-3 mt-1">
+    <div class="col-6">
+      <div class="section-title mt-2"><i class="bi bi-mortarboard-fill"></i> Pendidikan Formal</div>
+      <div class="p-2 bg-light border rounded">
+        <div class="fw-bold" style="font-size: 8.8pt;">S1 Teknik Informatika (S.Kom)</div>
+        <div class="small text-primary font-mono" style="font-size: 7.8pt;">Universitas Indraprasta PGRI (UNINDRA), Jakarta</div>
+        <div class="small text-secondary" style="font-size: 7.5pt;">Tahun: 2018 – 2022 &bull; <strong>IPK: 3.38 / 4.00</strong></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="section-title mt-2"><i class="bi bi-patch-check-fill"></i> Sertifikasi Terverifikasi</div>
+      
+      <div class="cert-item mb-1 py-1">
+        <div>
+          <div class="cert-info-title" style="font-size: 8pt;">.NET FullStack Developer</div>
+          <div class="cert-info-issuer">Board Infinity (Oct 2025)</div>
+        </div>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/JCWB4SREZNH2" target="_blank" class="cert-link">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+
+      <div class="cert-item mb-1 py-1">
+        <div>
+          <div class="cert-info-title" style="font-size: 8pt;">Foundations of Coding Full-Stack</div>
+          <div class="cert-info-issuer">Microsoft (Oct 2025)</div>
+        </div>
+        <a href="https://www.coursera.org/account/accomplishments/verify/02FH0N7DNQAS" target="_blank" class="cert-link">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+
+      <div class="cert-item mb-1 py-1">
+        <div>
+          <div class="cert-info-title" style="font-size: 8pt;">SQL (Basic) Certificate</div>
+          <div class="cert-info-issuer">HackerRank (Jun 2024)</div>
+        </div>
+        <a href="https://www.hackerrank.com/certificates/iframe/9ad16543e1a7" target="_blank" class="cert-link">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+
+      <div class="cert-item mb-1 py-1">
+        <div>
+          <div class="cert-info-title" style="font-size: 8pt;">TOEFL Prediction Test</div>
+          <div class="cert-info-issuer">Global Youth Action (Okt 2022)</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1Vbc_npYWIi2QmWTP4SAd8bFeX8CalbUi/view" target="_blank" class="cert-link">Lihat <i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+
+      <div class="cert-item mb-1 py-1">
+        <div>
+          <div class="cert-info-title" style="font-size: 8pt;">Cloud Practitioner Essentials (AWS)</div>
+          <div class="cert-info-issuer">DiCoding (Des 2022)</div>
+        </div>
+        <a href="https://drive.google.com/file/d/17L_tB7c7fHBm8tV6qpVVAoFDraG-vqL8/view?usp=sharing" target="_blank" class="cert-link">Lihat <i class="bi bi-box-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 3 Footer -->
+  <div class="footer-doc">
+    <span>Portofolio Resmi Naufal Sholahuddin, S.Kom</span>
+    <span>Halaman 3 dari 3</span>
+    <span>https://naufalsho.github.io/Portofolio_githubpages/</span>
+  </div>
+
+</body>
+</html>
