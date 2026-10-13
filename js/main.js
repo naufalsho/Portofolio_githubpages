@@ -95,6 +95,21 @@ $(document).ready(function () {
       stack: ['.NET 10 MVC', 'C# 13', 'Dapper 2.1', 'SQL Server 2022', 'Bootstrap 5', 'UBold Dashboard', 'jQuery SPA', 'Dragula.js', 'WebcamJS', 'DinkToPdf', 'ClosedXML'],
       repo: 'https://github.com/naufalsho/MedionExam'
     },
+    'medist3': {
+      title: 'MEDIST 3.0 — Enterprise Distribution & Customer Relation Management',
+      repoName: 'naufalsho/Medist_v3.0',
+      role: 'Full-Stack Developer (Areas/Mobile — Hublang Request)',
+      badge: '.NET 10 MVC • Dapper • Oracle / SQL Server',
+      description: 'Enterprise Resource Planning (ERP) dan supply chain distribution system berskala korporat yang mengelola proses operasional secara menyeluruh: logistik pengiriman armada (Shipment Realization), sirkulasi komersial pesanan & plafon kredit, serta digitalisasi permohonan relasi pelanggan (Hublang Request).',
+      highlights: [
+        'State Machine Circulation Workflow: Merancang alur persetujuan berjenjang 8 slot (Requester, DAM, SA1, AR, RM, SA2, SA3, Final Approval) dengan strict transaction audit log dan kontrol otorisasi.',
+        'Asynchronous Concurrent Data Fetching: Mengoptimasi pemuatan form pengajuan 12 tab kompleks via Task.WhenAll di Controller, memangkas latency pemuatan halaman hingga 60-70% tanpa waterfall bottleneck.',
+        'Dapper Micro-ORM & Clean SQL Separation: Menyusun 48 query SQL modular terisolasi via SqlLoader untuk eksekusi data access berkinerja tinggi tanpa overhead ORM berat.',
+        'Multi-Commodity Business Potential & SFTP Storage: Evaluasi kelayakan kredit calon pelanggan lintas komoditas (Agri, Aqua, Pet, Farm, Shop, OZPS) serta integrasi penyimpanan dokumen SFTP dan PDF generation.'
+      ],
+      stack: ['.NET 10 MVC', 'C#', 'Dapper micro-ORM', 'SqlLoader', 'Oracle / SQL Server', 'Task.WhenAll Async', 'Bootstrap 5', 'UBold Dashboard', 'jQuery 3.x', 'State Machine', 'SFTP & PDF Generation'],
+      repo: 'https://github.com/naufalsho/Medist_v3.0'
+    },
     'aedportal': {
       title: 'AED Portal — Machinery Specification, Technical Library & Q&A System',
       repoName: 'naufalsho/AED-1',

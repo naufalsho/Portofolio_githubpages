@@ -49,10 +49,6 @@
         </a>
 
         <div class="d-flex align-items-center d-lg-none gap-2">
-          <!-- Mobile CV Download -->
-          <a href="assets/cv/CV_Naufal_Sholahuddin_DotNet_Developer.pdf" download="CV_Naufal_Sholahuddin_DotNet_Developer.pdf" class="btn btn-outline-custom p-2" title="Download CV">
-            <i class="bi bi-file-earmark-pdf-fill text-danger"></i>
-          </a>
           <!-- Mobile Theme Toggle -->
           <button class="btn btn-outline-custom p-2" id="themeToggleBtnMobile" type="button" aria-label="Toggle Theme" onclick="$('#themeToggleBtn').click();">
             <i class="bi bi-moon-stars-fill" id="themeIconMobile"></i>
@@ -85,12 +81,6 @@
           </ul>
 
           <div class="d-flex align-items-center ms-lg-3 gap-2 mt-3 mt-lg-0">
-            <!-- Download CV Button in Navbar -->
-            <a href="assets/cv/CV_Naufal_Sholahuddin_DotNet_Developer.pdf" download="CV_Naufal_Sholahuddin_DotNet_Developer.pdf" class="btn btn-outline-custom px-3 py-2" title="Download CV Format PDF">
-              <i class="bi bi-file-earmark-pdf-fill text-danger"></i>
-              <span>Download CV</span>
-            </a>
-
             <!-- Theme Toggler Desktop -->
             <button class="btn btn-outline-custom d-none d-lg-inline-flex px-3 py-2" id="themeToggleBtn" type="button" title="Toggle Dark/Light Mode">
               <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
@@ -122,7 +112,7 @@
               Spesialis dalam arsitektur backend berkinerja tinggi menggunakan <strong>C#, .NET 10, Dapper, SQL Server</strong>, serta integrasi sistem enterprise (SAP, SSRS, OCR). Memiliki pengalaman 3+ tahun menangani transformasi sistem kritikal di berbagai perusahaan terkemuka.
             </p>
 
-            <!-- Quick Action Buttons (including Download CV) -->
+            <!-- Quick Action Buttons (including Download CV & LinkedIn) -->
             <div class="d-flex flex-wrap gap-3 mb-4">
               <!-- DOWNLOAD CV BUTTON -->
               <a href="assets/cv/CV_Naufal_Sholahuddin_DotNet_Developer.pdf" download="CV_Naufal_Sholahuddin_DotNet_Developer.pdf" class="btn btn-primary-gradient">
@@ -132,6 +122,10 @@
               <a href="#projects" class="btn btn-outline-custom">
                 <i class="bi bi-code-slash"></i>
                 <span>Lihat Repositori Proyek</span>
+              </a>
+              <a href="https://www.linkedin.com/in/naufalsholahuddin" target="_blank" class="btn btn-outline-custom">
+                <i class="bi bi-linkedin text-info"></i>
+                <span>LinkedIn</span>
               </a>
               <a href="https://wa.me/6281295927133?text=Halo%20Naufal,%20saya%20tertarik%20dengan%20profil%20dan%20keahlian%20.NET%20Anda" target="_blank" class="btn btn-outline-custom">
                 <i class="bi bi-whatsapp text-success"></i>
@@ -514,7 +508,44 @@
             </div>
           </div>
 
-          <!-- Repo 2: AED-1 -->
+          <!-- Repo 2: Medist_v3.0 -->
+          <div class="col-md-6 col-lg-4 project-item dotnet fullstack">
+            <div class="card-custom project-card">
+              <div class="project-card-header">
+                <div class="project-icon-box">
+                  <i class="fa-solid fa-boxes-packing text-primary"></i>
+                </div>
+                <span class="badge bg-primary-subtle text-primary font-mono small">.NET 10 MVC • Dapper</span>
+              </div>
+              <div class="project-card-body">
+                <div class="small text-secondary mb-1 font-mono">
+                  <i class="bi bi-github me-1"></i>naufalsho/Medist_v3.0
+                </div>
+                <h5 class="project-card-title">MEDIST 3.0 (ERP Distribution)</h5>
+                <p class="project-card-desc">
+                  Enterprise Distribution & CRM ERP system. Modul Hublang Request dengan 8-stage slot-based state machine, concurrent async Task.WhenAll (pangkas latensi 60-70%), dan 48 query SQL Dapper modular.
+                </p>
+                <div class="tech-badge-container">
+                  <span class="tech-badge highlight">.NET 10 MVC</span>
+                  <span class="tech-badge highlight">Dapper (SqlLoader)</span>
+                  <span class="tech-badge highlight">Task.WhenAll Async</span>
+                  <span class="tech-badge">Oracle / SQL Server</span>
+                  <span class="tech-badge">UBold Dashboard</span>
+                  <span class="tech-badge">State Machine</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <button class="btn btn-outline-custom flex-grow-1 btn-sm btn-view-detail" data-project="medist3">
+                    <i class="bi bi-info-circle"></i> Detail README
+                  </button>
+                  <a href="https://github.com/naufalsho/Medist_v3.0" target="_blank" class="btn btn-outline-custom btn-sm" title="Buka Repositori GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repo 3: AED-1 -->
           <div class="col-md-6 col-lg-4 project-item dotnet fullstack">
             <div class="card-custom project-card">
               <div class="project-card-header">
@@ -1060,32 +1091,36 @@
             </h4>
 
             <div class="d-flex flex-column gap-3">
-              <!-- Cert 1 -->
-              <div class="cert-card">
+              <!-- Cert a: .NET FullStack Developer (Board Infinity) -->
+              <a href="https://www.coursera.org/account/accomplishments/specialization/JCWB4SREZNH2" target="_blank" rel="noopener noreferrer" class="cert-card text-decoration-none" title="Buka Kredensial Sertifikat Coursera">
                 <div class="cert-icon bg-primary-subtle text-primary">
-                  <i class="fa-brands fa-microsoft"></i>
-                </div>
-                <div class="flex-grow-1">
-                  <div class="fw-bold">Foundations of Coding Full-Stack</div>
-                  <div class="small text-secondary font-mono">Microsoft (Okt 2025)</div>
-                </div>
-                <span class="badge bg-success-subtle text-success small font-mono">Verified</span>
-              </div>
-
-              <!-- Cert 2 -->
-              <div class="cert-card">
-                <div class="cert-icon bg-info-subtle text-info">
                   <i class="fa-solid fa-code"></i>
                 </div>
                 <div class="flex-grow-1">
                   <div class="fw-bold">.NET FullStack Developer</div>
-                  <div class="small text-secondary font-mono">Board Infinity (Okt 2025)</div>
+                  <div class="small text-secondary font-mono">Board Infinity (Oct 2025)</div>
                 </div>
-                <span class="badge bg-success-subtle text-success small font-mono">Verified</span>
-              </div>
+                <span class="badge bg-success-subtle text-success small font-mono d-flex align-items-center gap-1">
+                  Verify <i class="bi bi-box-arrow-up-right"></i>
+                </span>
+              </a>
 
-              <!-- Cert 3 -->
-              <div class="cert-card">
+              <!-- Cert b: Foundations of Coding Full-Stack (Microsoft) -->
+              <a href="https://www.coursera.org/account/accomplishments/verify/02FH0N7DNQAS" target="_blank" rel="noopener noreferrer" class="cert-card text-decoration-none" title="Buka Kredensial Sertifikat Microsoft">
+                <div class="cert-icon bg-info-subtle text-info">
+                  <i class="fa-brands fa-microsoft"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="fw-bold">Foundations of Coding Full-Stack</div>
+                  <div class="small text-secondary font-mono">Microsoft (Oct 2025)</div>
+                </div>
+                <span class="badge bg-success-subtle text-success small font-mono d-flex align-items-center gap-1">
+                  Verify <i class="bi bi-box-arrow-up-right"></i>
+                </span>
+              </a>
+
+              <!-- Cert c: SQL (Basic) Certificate (HackerRank) -->
+              <a href="https://www.hackerrank.com/certificates/iframe/9ad16543e1a7" target="_blank" rel="noopener noreferrer" class="cert-card text-decoration-none" title="Buka Kredensial Sertifikat HackerRank">
                 <div class="cert-icon bg-warning-subtle text-warning">
                   <i class="fa-solid fa-database"></i>
                 </div>
@@ -1093,11 +1128,13 @@
                   <div class="fw-bold">SQL (Basic) Certificate</div>
                   <div class="small text-secondary font-mono">HackerRank (Jun 2024)</div>
                 </div>
-                <span class="badge bg-success-subtle text-success small font-mono">Verified</span>
-              </div>
+                <span class="badge bg-success-subtle text-success small font-mono d-flex align-items-center gap-1">
+                  Verify <i class="bi bi-box-arrow-up-right"></i>
+                </span>
+              </a>
 
-              <!-- Cert 4 -->
-              <div class="cert-card">
+              <!-- Cert d: TOEFL Prediction Test (Global Youth Action) -->
+              <a href="https://drive.google.com/file/d/1Vbc_npYWIi2QmWTP4SAd8bFeX8CalbUi/view" target="_blank" rel="noopener noreferrer" class="cert-card text-decoration-none" title="Lihat Sertifikat TOEFL Prediction">
                 <div class="cert-icon bg-secondary-subtle text-secondary">
                   <i class="fa-solid fa-language"></i>
                 </div>
@@ -1105,8 +1142,24 @@
                   <div class="fw-bold">TOEFL Prediction Test</div>
                   <div class="small text-secondary font-mono">Global Youth Action (Okt 2022)</div>
                 </div>
-                <span class="badge bg-info-subtle text-info small font-mono">Language</span>
-              </div>
+                <span class="badge bg-info-subtle text-info small font-mono d-flex align-items-center gap-1">
+                  Lihat <i class="bi bi-box-arrow-up-right"></i>
+                </span>
+              </a>
+
+              <!-- Cert e: Cloud Practitioner Essentials (Dicoding) -->
+              <a href="https://drive.google.com/file/d/17L_tB7c7fHBm8tV6qpVVAoFDraG-vqL8/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-card text-decoration-none" title="Lihat Sertifikat Dicoding AWS Cloud">
+                <div class="cert-icon bg-warning-subtle text-warning">
+                  <i class="fa-brands fa-aws"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="fw-bold">Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)</div>
+                  <div class="small text-secondary font-mono">DiCoding (Des 2022)</div>
+                </div>
+                <span class="badge bg-success-subtle text-success small font-mono d-flex align-items-center gap-1">
+                  Lihat <i class="bi bi-box-arrow-up-right"></i>
+                </span>
+              </a>
             </div>
           </div>
         </div>

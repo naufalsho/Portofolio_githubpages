@@ -539,12 +539,15 @@ a {
   align-items: center;
   gap: 1rem;
   transition: var(--transition-normal);
+  color: inherit;
+  text-decoration: none;
 }
 
 .cert-card:hover {
   border-color: var(--border-hover);
   transform: translateY(-3px);
   box-shadow: var(--card-shadow-hover);
+  color: inherit;
 }
 
 .cert-icon {
