@@ -81,7 +81,7 @@ $(document).ready(function () {
   const projectDetails = {
     'medionexam': {
       title: 'MedionExam (ExSys 3.0) — Enterprise Assessment & Examination Platform',
-      repoName: 'naufalsho/MedionExam',
+      repoName: 'Private Repository (Internal Enterprise)',
       role: 'Full Stack .NET Developer & Architect',
       badge: '.NET 10 MVC • Dapper 2.1 • C# 13',
       description: 'Enterprise web-based assessment system engineered for large-scale employee recruitment, psychometric testing, and competency evaluations. Orchestrates dynamic multimedia questions, proctored live testing, automated grading, evaluator rubrics, and high-fidelity PDF competency reports.',
@@ -93,11 +93,11 @@ $(document).ready(function () {
         'Asynchronous Background Email Queue (IHostedService EmailQueueWorker) and pixel-perfect PDF reporting via DinkToPdf.'
       ],
       stack: ['.NET 10 MVC', 'C# 13', 'Dapper 2.1', 'SQL Server 2022', 'Bootstrap 5', 'UBold Dashboard', 'jQuery SPA', 'Dragula.js', 'WebcamJS', 'DinkToPdf', 'ClosedXML'],
-      repo: 'https://github.com/naufalsho/MedionExam'
+      repo: null
     },
     'medist3': {
       title: 'MEDIST 3.0 — Enterprise Distribution & Customer Relation Management',
-      repoName: 'naufalsho/Medist_v3.0',
+      repoName: 'Private Repository (Internal Enterprise)',
       role: 'Full-Stack Developer (Areas/Mobile — Hublang Request)',
       badge: '.NET 10 MVC • Dapper • Oracle / SQL Server',
       description: 'Enterprise Resource Planning (ERP) dan supply chain distribution system berskala korporat yang mengelola proses operasional secara menyeluruh: logistik pengiriman armada (Shipment Realization), sirkulasi komersial pesanan & plafon kredit, serta digitalisasi permohonan relasi pelanggan (Hublang Request).',
@@ -108,11 +108,11 @@ $(document).ready(function () {
         'Multi-Commodity Business Potential & SFTP Storage: Evaluasi kelayakan kredit calon pelanggan lintas komoditas (Agri, Aqua, Pet, Farm, Shop, OZPS) serta integrasi penyimpanan dokumen SFTP dan PDF generation.'
       ],
       stack: ['.NET 10 MVC', 'C#', 'Dapper micro-ORM', 'SqlLoader', 'Oracle / SQL Server', 'Task.WhenAll Async', 'Bootstrap 5', 'UBold Dashboard', 'jQuery 3.x', 'State Machine', 'SFTP & PDF Generation'],
-      repo: 'https://github.com/naufalsho/Medist_v3.0'
+      repo: null
     },
     'aedportal': {
       title: 'AED Portal — Machinery Specification, Technical Library & Q&A System',
-      repoName: 'naufalsho/AED-1',
+      repoName: 'Private Repository (Internal Enterprise)',
       role: 'Full Stack Developer',
       badge: '.NET 6.0 • Dapper + EF Core • SignalR',
       description: 'Enterprise internal web portal supporting technical and commercial operations in heavy machinery (Material Handling & Agribusiness), competitor head-to-head unit comparisons, technical handbooks, and collaborative Q&A ticket consultation.',
@@ -124,11 +124,11 @@ $(document).ready(function () {
         'Hangfire background task processing, secure cookie auth, AES encryption, and in-browser protected PDF document reader.'
       ],
       stack: ['.NET 6.0 MVC', 'C# 10', 'Dapper', 'EF Core 6', 'SignalR', 'SQL Server', 'Bootstrap 5', 'DataTables', 'Select2', 'Hangfire', 'AES Encryption'],
-      repo: 'https://github.com/naufalsho/AED-1'
+      repo: null
     },
     'msiportal': {
       title: 'MSI Portal — Yard Management System (YMS) & Inbound Logistics',
-      repoName: 'naufalsho/MSI-v01',
+      repoName: 'Private Repository (Internal Enterprise)',
       role: 'Full Stack Developer (Inbound, Customs & OCR)',
       badge: '.NET 6 MVC • Tesseract OCR • SAP ABAP Batch',
       description: 'Enterprise Yard Management System (YMS) and inbound logistics platform managing heavy equipment inflow, customs clearance automation (import/export), unloading inspection, and yard block placement.',
@@ -140,11 +140,11 @@ $(document).ready(function () {
         'RPA bot integration for real-time tax/customs rate synchronization and embedded Microsoft Power BI analytical dashboards.'
       ],
       stack: ['ASP.NET Core 6 MVC', 'EF Core', 'SQL Server', 'Tesseract OCR', 'SAP HANA ABAP Batch', 'Power BI Api', 'RPA Automation', 'Bootstrap 5', 'DataTables'],
-      repo: 'https://github.com/naufalsho/MSI-v01'
+      repo: null
     },
     'dqcustomer': {
       title: 'DQCustomer — Customer Data Quality & Account Governance Service',
-      repoName: 'naufalsho/DQCustomerBackEnd',
+      repoName: 'Private Repository (Internal Enterprise)',
       role: 'Full Stack Developer (API & Next.js Integration)',
       badge: '.NET Core Web API • Dapper • Next.js & TS',
       description: 'Enterprise Customer Master Data governance, account segmentation, sales opportunity funnel, and billing schedule backend service integrated with a modern Next.js TypeScript frontend.',
@@ -156,11 +156,11 @@ $(document).ready(function () {
         'Sales opportunity funnel tracking and automated workflow approval notifications via Stored Procedures.'
       ],
       stack: ['ASP.NET Core Web API', 'Dapper ORM', 'SQL Server', 'Next.js', 'TypeScript', 'JWT Auth', 'Consul Service Discovery', 'N-Layered Arch'],
-      repo: 'https://github.com/naufalsho/DQCustomerBackEnd'
+      repo: null
     },
     'raspsychotest': {
       title: 'RAS-Psychotest-Berca — Enterprise Psychological Testing Platform',
-      repoName: 'naufalsho/RAS-Psychotest-Berca',
+      repoName: 'Private Repository (Internal Enterprise)',
       role: 'Lead Full Stack Contributor (340+ commits)',
       badge: '.NET 6 MVC • 5 Test Batteries • ClosedXML',
       description: 'In-house enterprise online psychological testing platform built from scratch for HR & Talent Acquisition PT Berca Hardayaperkasa, replacing recurring third-party vendor SaaS subscriptions.',
@@ -172,11 +172,11 @@ $(document).ready(function () {
         'Automated email invitations using SQL Server Database Mail with built-in 3x retry transaction mechanism.'
       ],
       stack: ['.NET 6.0 MVC', 'C# 10', 'Dapper & EF Core', 'SQL Server', 'AdminLTE', 'xUnit & Moq', 'ClosedXML', 'Database Mail', 'JWT Auth'],
-      repo: 'https://github.com/naufalsho/RAS-Psychotest-Berca'
+      repo: null
     },
     'aedmobile': {
       title: 'Traknus AED Mobile — Industrial Equipment & Field Portal App',
-      repoName: 'naufalsho/aed_mobile_v01',
+      repoName: 'Private Repository (Internal Enterprise)',
       role: 'Mobile & API Developer',
       badge: 'Flutter 3.x • Dart 3.8+ • Provider Pattern',
       description: 'Enterprise cross-platform mobile application providing field engineers, sales teams, and operational staff with role-based access to heavy machinery catalogs, multi-division resources, and offline technical handbooks.',
@@ -188,7 +188,7 @@ $(document).ready(function () {
         'Fault-tolerant network service layer communicating seamlessly with ASP.NET Core backend endpoints.'
       ],
       stack: ['Flutter 3.x', 'Dart 3.8+', 'Provider Pattern', 'Dio & http', 'flutter_pdfview', 'SharedPreferences', 'REST API', 'JSON Serialization'],
-      repo: 'https://github.com/naufalsho/aed_mobile_v01'
+      repo: null
     },
     'assessmentagit': {
       title: 'Access Request Hub MVP (Assessment Agit)',
@@ -289,11 +289,13 @@ $(document).ready(function () {
       $stackList.append(`<span class="tech-badge highlight">${s}</span>`);
     });
 
-    // Repo link
+    // Repo link & Private status badge
     if (data.repo) {
-      $('#modalProjRepoBtn').attr('href', data.repo).show();
+      $('#modalProjRepoBtn').attr('href', data.repo).removeClass('d-none').show();
+      $('#modalProjPrivateBadge').addClass('d-none');
     } else {
-      $('#modalProjRepoBtn').hide();
+      $('#modalProjRepoBtn').removeAttr('href').addClass('d-none').hide();
+      $('#modalProjPrivateBadge').removeClass('d-none');
     }
 
     const modal = new bootstrap.Modal(document.getElementById('projectDetailModal'));
